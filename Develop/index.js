@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-
-
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
     {
     $('.saveBtn').click(function () {
@@ -29,23 +28,24 @@ $(document).ready(function () {
     }
 
     var morn8 = localStorage.getItem('8task');
-    document.getElementById('8').value = morn8;
+    document.getElementById('8am').value = morn8;
     var morn9 = localStorage.getItem('9task');
-    document.getElementById('9').value = morn9;
+    document.getElementById('9am').value = morn9;
     var morn10 = localStorage.getItem('10task');
-    document.getElementById('10').value = morn10;
-    var morn11 = localStorage.getElementById('11task');
-    document.getElementById('11').value = morn11;
-    var after12 = localStorage.getElementById('12task');
-    document.getElementById.length('12').value = after12;
-    var after1 = localStorage.getElementById('1task');
-    document.getElementById('1').value = after1;
-    var after2 = localStorage.getElementById('2task');
-    document.getElementById('2').value = after2;
-    var after3 = localStorage.getElementById('3task');
-    document.getElementById('3').value = after3;
-    var after4 = localStorage.getElementById('4task');
-    document.getElementById('4').value = after4;
-    var after5 = localStorage.getElementById('5task');
-    document.getElementById('5').value = after5;
+    document.getElementById('10am').value = morn10;
+    var morn11 = localStorage.getItem('11task');
+    document.getElementById('11am').value = morn11;
+    var after12 = localStorage.getItem('12task');
+    document.getElementById('12pm').value = after12;
+    var after1 = localStorage.getItem('1task');
+    document.getElementById('1pm').value = after1;
+    var after2 = localStorage.getItem('2task');
+    document.getElementById('2pm').value = after2;
+    var after3 = localStorage.getItem('3task');
+    document.getElementById('3pm').value = after3;
+    var after4 = localStorage.getItem('4task');
+    document.getElementById('4pm').value = after4;
+    var after5 = localStorage.getItem('5task');
+    document.getElementById('5pm').value = after5;
+    
 });
